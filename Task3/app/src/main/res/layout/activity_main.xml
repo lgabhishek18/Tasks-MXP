@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/text1"
+        android:textColor="#0928D1"
+        android:text="MX Player"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="125dp"
+        android:id="@+id/aboutus"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="About US"
+        android:textColor="#FFEB3B"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="130dp"
+        android:id="@+id/contactus"
+        android:layout_below="@id/text1"
+        android:layout_toRightOf="@id/aboutus"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="6dp"
+        android:text="Contact Us"
+        android:textColor="#FFEB3B"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="125dp"
+        android:id="@+id/gallery"
+        android:layout_below="@id/text1"
+        android:layout_toRightOf="@id/contactus"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="6dp"
+        android:text="Gallery"
+        android:textColor="#FFEB3B"
+        android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/hview1"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="250dp"
+                android:background="@drawable/cube" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="250dp"
+                android:layout_toRightOf="@id/image1"
+                android:background="@drawable/elephant" />
+            <ImageView
+                android:layout_width="250dp"
+                android:id="@+id/image3"
+                android:background="@drawable/choco"
+                android:layout_marginTop="250dp"
+                android:layout_toRightOf="@id/image2"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_width="250dp"
+                android:id="@+id/image4"
+                android:background="@drawable/cube"
+                android:layout_marginTop="250dp"
+                android:layout_toRightOf="@id/image3"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_width="250dp"
+                android:id="@+id/image5"
+                android:background="@drawable/choco"
+                android:layout_marginTop="250dp"
+                android:layout_toRightOf="@id/image4"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_width="250dp"
+                android:id="@+id/image6"
+                android:background="@drawable/elephant"
+                android:layout_marginTop="250dp"
+                android:layout_toRightOf="@id/image5"
+                android:layout_height="200dp"/>
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

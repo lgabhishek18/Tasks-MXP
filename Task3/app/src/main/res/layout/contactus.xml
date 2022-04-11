@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textcontact"
+        android:layout_marginTop="20dp"
+        android:text="Contact Us"
+        android:textSize="30dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="#F44336"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:id="@+id/song1"
+        android:layout_below="@id/textcontact"
+        android:layout_marginTop="50dp"
+        android:text="Closer : "
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:textSize="30dp"
+        android:textColor="#FF9800"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="90dp"
+        android:id="@+id/start1"
+        android:layout_below="@id/textcontact"
+        android:text="Start"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/song1"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="90dp"
+        android:id="@+id/stop1"
+        android:layout_below="@id/textcontact"
+        android:text="Stop"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/start1"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:id="@+id/song2"
+        android:layout_below="@id/song1"
+        android:layout_marginTop="50dp"
+        android:text="Perfect : "
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:textSize="30dp"
+        android:textColor="#FF9800"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="90dp"
+        android:id="@+id/start2"
+        android:layout_below="@id/textcontact"
+        android:text="Start"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/song2"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="90dp"
+        android:id="@+id/stop2"
+        android:layout_below="@id/textcontact"
+        android:text="Stop"
+        android:layout_marginTop="135dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/start2"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
